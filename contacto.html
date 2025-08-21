@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CheBurga | Menu</title>
+  <meta name="description" content="Página de CheBurga">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Roboto:wght@300;400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="img/logo.ico" type="image/png">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand mx-auto d-lg-none" href="index.html">
+        <img src="img/logo.png" alt="Logo CheBurga" class="navbar-logo">
+      </a>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav d-none d-lg-flex align-items-center">
+          <div class="navbar-split">
+            <li class="nav-item"><a class="nav-link" href="menu.html">Menú</a></li>
+            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="ubicacion.html">Ubicación</a></li>
+          </div>
+          <a class="navbar-brand px-4" href="index.html">
+            <img src="img/logo.png" alt="Logo CheBurga" class="navbar-logo">
+          </a>
+          <div class="navbar-split">
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link" href="pedir.html">Pedir</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          </div>
+        </ul>
+        <ul class="navbar-nav d-lg-none text-center">
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menú</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="ubicacion.html">Ubicación</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="pedir.html">Pedir</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div style="margin-top: 100px;"></div>
+
+  <section class="section-about py-5">
+    <div class="container">
+      <h2 class="about-title text-center mb-5">Contactanos!</h2>
+      <div class="row">
+        <div class="col-lg-8 mb-4">
+          <div class="card shadow-sm rounded-4">
+            <div class="card-body">
+              <h3 class="card-title fw-bold mb-4">Envianos tu Mensaje</h3>
+              <form id="contactForm" novalidate="">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="nombre" class="form-label">Nombre *</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required="">
+                    <div class="invalid-feedback">
+                      Por favor, ingresá tu nombre.
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="apellido" class="form-label">Apellido *</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido" required="">
+                    <div class="invalid-feedback">
+                      Por favor, ingresá tu apellido.
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="email" class="form-label">Email *</label>
+                    <input type="email" class="form-control" id="email" name="email" required="">
+                    <div class="invalid-feedback">
+                      Por favor, ingresá un email válido.
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="tel" class="form-control" id="telefono" name="telefono"
+                      placeholder="+54 9 11 1234-5678">
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="asunto" class="form-label">Asunto *</label>
+                  <select class="form-select" id="asunto" name="asunto" required="">
+                    <option value="">Seleccioná el motivo de tu consulta</option>
+                    <option value="consulta">Consulta General</option>
+                    <option value="pedido">Consulta sobre Pedido</option>
+                    <option value="sugerencia">Sugerencia</option>
+                    <option value="reclamo">Reclamo</option>
+                    <option value="trabajo">Oportunidades Laborales</option>
+                    <option value="eventos">Eventos y Catering</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Por favor, seleccioná un asunto.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="mensaje" class="form-label">Mensaje *</label>
+                  <textarea class="form-control" id="mensaje" name="mensaje" rows="5"
+                    placeholder="Contanos en detalle tu consulta..." required=""></textarea>
+                  <div class="invalid-feedback">
+                    Por favor, escribí tu mensaje.
+                  </div>
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="acepto" name="acepto" required="">
+                  <label class="form-check-label" for="acepto">
+                    Acepto recibir comunicaciones de CheBurga y confirmo que he leído la política de privacidad *
+                  </label>
+                  <div class="invalid-feedback">
+                    Debés aceptar los términos para continuar.
+                  </div>
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="newsletter" name="newsletter">
+                  <label class="form-check-label" for="newsletter">
+                    Quiero recibir promociones y novedades de CheBurga
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg">
+                  <i class="fas fa-paper-plane me-2"></i>
+                  Enviar Mensaje
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card shadow-sm mb-4 rounded-4">
+            <div class="card-body">
+              <h5 class="card-title fw-bold mb-4">Contacto Directo</h5>
+              <div class="contact-item mb-3">
+                <h6 class="fw-bold">
+                  <i class="fas fa-phone text-primary me-2"></i>
+                  Teléfono
+                </h6>
+                <p class="mb-1">+54 9 11 2345-6789</p>
+                <small class="text-muted">Lun a Dom: 18:00 - 00:00</small>
+              </div>
+              <div class="contact-item mb-3">
+                <h6 class="fw-bold">
+                  <i class="fab fa-whatsapp text-success me-2"></i>
+                  WhatsApp
+                </h6>
+                <p class="mb-1">+54 9 11 2345-6789</p>
+                <small class="text-muted">Respuesta inmediata</small>
+              </div>
+              <div class="contact-item mb-3">
+                <h6 class="fw-bold">
+                  <i class="fas fa-envelope text-warning me-2"></i>
+                  Email
+                </h6>
+                <p class="mb-1">hola@cheburga.com.ar</p>
+                <small class="text-muted">Respuesta en 24hs</small>
+              </div>
+              <div class="contact-item mb-4">
+                <h6 class="fw-bold">
+                  <i class="fas fa-map-marker-alt text-danger me-2"></i>
+                  Dirección
+                </h6>
+                <p class="mb-1">Av. Corrientes 1234</p>
+                <p class="mb-1">Ciudad Autónoma de Buenos Aires</p>
+                <small class="text-muted">Argentina</small>
+              </div>
+              <div class="d-grid gap-2">
+                <a href="https://wa.me/5491123456789" class="btn btn-success" target="_blank">
+                  <i class="fab fa-whatsapp me-2"></i>
+                  Escribinos por WhatsApp
+                </a>
+                <a href="tel:+5491123456789" class="btn btn-outline-primary">
+                  <i class="fas fa-phone me-2"></i>
+                  Llamanos Ahora
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card shadow-sm rounded-4">
+            <div class="card-body">
+              <h5 class="card-title fw-bold mb-3">Seguinos en Redes</h5>
+              <div class="delivery-platforms">
+                <a href="https://instagram.com/cheburga" class="platform-item" target="_blank">
+                  <div class="platform-logo">
+                    <i class="fab fa-instagram"></i>
+                  </div>
+                  <span class="platform-name">@cheburga</span>
+                </a>
+                <a href="https://facebook.com/cheburga" class="platform-item" target="_blank">
+                  <div class="platform-logo">
+                    <i class="fab fa-facebook"></i>
+                  </div>
+                  <span class="platform-name">CheBurga</span>
+                </a>
+                <a href="https://tiktok.com/@cheburga" class="platform-item" target="_blank">
+                  <div class="platform-logo">
+                    <i class="fab fa-tiktok"></i>
+                  </div>
+                  <span class="platform-name">@cheburga</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section py-5 bg-black">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="about-title">Preguntas Frecuentes</h2>
+        <p class="delivery-subtitle text-white">Las respuestas a las consultas más comunes</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                  ¿Cuál es el tiempo de entrega del delivery?
+                </button>
+              </h2>
+              <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                <div class="accordion-body about-text">
+                  El tiempo de entrega es de 30-45 minutos en CABA y 45-60 minutos en zona norte.
+                  Los fines de semana puede extenderse 10-15 minutos adicionales por la alta demanda.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse2">
+                  ¿Tienen opciones vegetarianas y veganas?
+                </button>
+              </h2>
+              <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body about-text">
+                  ¡Sí! Tenemos "La Veggie Che" que es 100% vegana, hecha con medallón de quinoa y lentejas,
+                  palta, tomate y mayonesa vegana. También podemos adaptar otras hamburguesas según tus necesidades.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse3">
+                  ¿Puedo personalizar mi hamburguesa?
+                </button>
+              </h2>
+              <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body about-text">
+                  ¡Por supuesto! Podés agregar o quitar ingredientes, cambiar el tipo de queso,
+                  elegir el punto de cocción de la carne y agregar extras como panceta, huevo frito o palta.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse4">
+                  ¿Qué métodos de pago aceptan?
+                </button>
+              </h2>
+              <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body about-text">
+                  Aceptamos efectivo, tarjetas de débito y crédito (Visa, Mastercard, American Express),
+                  MercadoPago, transferencias bancarias y billeteras virtuales como Ualá y Brubank.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq5">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse5">
+                  ¿Hacen eventos y catering?
+                </button>
+              </h2>
+              <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body about-text">
+                  ¡Sí! Organizamos cumpleaños, eventos corporativos y catering para fiestas.
+                  Tenemos paquetes especiales desde 20 personas. Contactanos para más información.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq6">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse6">
+                  ¿Puedo reservar una mesa?
+                </button>
+              </h2>
+              <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body about-text">
+                  Sí, podés reservar llamando al +54 9 11 2345-6789 o escribiendo por WhatsApp.
+                  Recomendamos reservar especialmente los fines de semana ya que tenemos mucha demanda.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section py-5 bg-black">
+    <div class="container text-center">
+      <h2 class="about-title mb-4">¿Preferís Contacto Directo?</h2>
+      <p class="delivery-subtitle mb-4 text-white">Estamos disponibles por teléfono y WhatsApp durante nuestros horarios de
+        atención</p>
+      <div class="d-flex flex-column flex-md-row gap-3 justify-content-center">
+        <a href="https://wa.me/5491123456789" class="btn btn-success btn-lg" target="_blank">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="tel:+5491123456789" class="btn btn-warning btn-lg">
+          <i class="fas fa-phone"></i> Llamanos
+        </a>
+        <a href="ubicacion.html" class="btn btn-outline-light btn-lg">
+          <i class="fas fa-map-marker-alt"></i> Visitanos
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h2>CheBurga</h2>
+        <p>La hamburguesería con más onda de Argentina. Sabor auténtico, ingredientes frescos y la mejor atención.
+        </p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h3>Navegación</h3>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="menu.html">Menú</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="ubicacion.html">Ubicación</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contacto</h3>
+        <p><i class="fas fa-map-marker-alt"></i> Av. Corrientes 1234, CABA</p>
+        <p><i class="fas fa-phone"></i> +54 9 11 2345-6789</p>
+        <p><i class="fas fa-envelope"></i> hola@cheburga.com.ar</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Horarios</h3>
+        <p><strong>Lunes a Jueves:</strong> 18:00 - 00:00</p>
+        <p><strong>Viernes y Sábado:</strong> 18:00 - 02:00</p>
+        <p><strong>Domingo:</strong> 18:00 - 00:00</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 CheBurga. Todos los derechos reservados.</p>
+      <p>Desarrollado por: Costa- Martinez- Rivero- Flores - Gestion de TI - Turno Tarde- 2025</p>
+    </div>
+  </footer>
+
+  
+  <a href="https://wa.me/5491123456789" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+  (() => {
+    'use strict';
+    const form = document.getElementById('contactForm');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      if (!form.checkValidity()) {
+        form.classList.add('was-validated');
+      } else {
+        Swal.fire({
+          icon: 'success',
+          title: '¡Mensaje enviado!',
+          text: 'Gracias por contactarte con CheBurga. Te responderemos a la brevedad.',
+          confirmButtonColor: '#28a745'
+        });
+
+        form.reset();
+        form.classList.remove('was-validated');
+      }
+    });
+  })();
+</script>
+
+</body>
+
+</html>

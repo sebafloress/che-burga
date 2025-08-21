@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CheBurga | Pedí tu Hamburguesa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mx-auto d-lg-none" href="index.html">
+                <img src="img/logo.png" alt="Logo CheBurga" class="navbar-logo">
+            </a>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav d-none d-lg-flex align-items-center">
+                    <div class="navbar-split">
+                        <li class="nav-item"><a class="nav-link" href="menu.html">Menú</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ubicacion.html">Ubicación</a></li>
+                    </div>
+                    <a class="navbar-brand px-4" href="index.html">
+                        <img src="img/logo.png" alt="Logo CheBurga" class="navbar-logo">
+                    </a>
+                    <div class="navbar-split">
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pedir.html">Pedir</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    </div>
+                </ul>
+                <ul class="navbar-nav d-lg-none text-center">
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menú</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ubicacion.html">Ubicación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pedir.html">Pedir</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        
+        <form id="pedidoForm">
+            <h4 class="mb-4 text-warning">Hamburguesas</h4>
+            <div class="row">
+                <!-- Hamburguesas -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" style="animation-delay: 0s;">
+                        <img src="img/clasica.jpg" class="card-img-top" alt="La Che Clásica" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title">La Che Clásica</h5>
+                            <p class="card-text acento">Cheddar, carne nacional, pan artesanal</p>
+                            <label for="cantidad0">Cantidad:</label>
+                            <input type="number" id="cantidad0" name="La Che Clásica" min="0" value="0"
+                                class="form-control text-center w-50 mx-auto" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" style="animation-delay: 0.1s;">
+                        <img src="img/portenia.jpg" class="card-img-top" alt="La Porteña" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title">La Porteña</h5>
+                            <p class="card-text acento">Provoleta, chimichurri y sabor argentino</p>
+                            <label for="cantidad1">Cantidad:</label>
+                            <input type="number" id="cantidad1" name="La Porteña" min="0" value="0"
+                                class="form-control text-center w-50 mx-auto" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" style="animation-delay: 0.2s;">
+                        <img src="img/vegana.jpg" class="card-img-top" alt="La Vegana" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title">La Vegana</h5>
+                            <p class="card-text acento">Lentejas, palta, pan vegano</p>
+                            <label for="cantidad2">Cantidad:</label>
+                            <input type="number" id="cantidad2" name="La Vegana" min="0" value="0"
+                                class="form-control text-center w-50 mx-auto" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" style="animation-delay: 0.3s;">
+                        <img src="img/matehum2.png" class="card-img-top" alt="Fuego Argento" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Fuego Argento</h5>
+                            <p class="card-text acento">Jalapeños, cebolla morada, salsa ahumada. Pan con semillas de
+                                ají triturado.</p>
+                            <label for="cantidad3">Cantidad:</label>
+                            <input type="number" id="cantidad3" name="Fuego Argento" min="0" value="0"
+                                class="form-control text-center w-50 mx-auto" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" style="animation-delay: 0.4s;">
+                        <img src="img/matehum.png" class="card-img-top" alt="Terminator" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Terminator</h5>
+                            <p class="card-text acento">Carne quintuple, llena de cheddar. <br />Te animás a probarla?
+                            </p>
+                            <label for="cantidad4">Cantidad:</label>
+                            <input type="number" id="cantidad4" name="Terminator" min="0" value="0"
+                                class="form-control text-center w-50 mx-auto" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" style="animation-delay: 0.5s;">
+                        <img src="img/matehum3.png" class="card-img-top" alt="Doble Sol" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Doble Sol</h5>
+                            <p class="card-text acento">Doble carne, lechuga, tomate y el mejor huevo frito</p>
+                            <label for="cantidad5">Cantidad:</label>
+                            <input type="number" id="cantidad5" name="Doble Sol" min="0" value="0"
+                                class="form-control text-center w-50 mx-auto" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="mb-4 text-warning">Bebidas</h4>
+            <div class="row">
+                <!-- Bebidas -->
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100" style="animation-delay: 0.6s;">
+                        <img src="img/cerveza.jpg" class="card-img-top" alt="Cerveza Artesanal" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Cerveza Artesanal</h5>
+                            <p class="card-text acento">Variedades locales: rubia, roja y negra.</p>
+                            <label for="cantidad6">Cantidad:</label>
+                            <input type="number" id="cantidad6" name="Cerveza Artesanal" min="0" value="0"
+                                class="form-control text-center w-50 mx-auto" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100" style="animation-delay: 0.7s;">
+                        <img src="img/bebidamat.jpg" class="card-img-top" alt="Fernet" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Fernet</h5>
+                            <p class="card-text acento">Uno de los mejores clásicos del país</p>
+                            <label for="cantidad7">Cantidad:</label>
+                            <input type="number" id="cantidad7" name="Fernet" min="0" value="0"
+                                class="form-control text-center w-50 mx-auto" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100" style="animation-delay: 0.8s;">
+                        <img src="img/bebida3.jpg" class="card-img-top" alt="Campari" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Campari</h5>
+                            <p class="card-text acento">Para quienes prefieren algo más dulce</p>
+                            <label for="cantidad8">Cantidad:</label>
+                            <input type="number" id="cantidad8" name="Campari" min="0" value="0"
+                                class="form-control text-center w-50 mx-auto" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100" style="animation-delay: 0.9s;">
+                        <img src="img/bebidacoc.webp" class="card-img-top" alt="Línea Coca Cola" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Línea Coca Cola</h5>
+                            <p class="card-text acento">Toda la línea para quienes prefieren algo sin alcohol</p>
+                            <label for="cantidad9">Cantidad:</label>
+                            <input type="number" id="cantidad9" name="Línea Coca Cola" min="0" value="0"
+                                class="form-control text-center w-50 mx-auto" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <button type="submit" class="btn btn-success btn-lg">Enviar pedido por WhatsApp</button>
+            </div>
+        </form>
+    </main>
+
+    <!-- FOOTER (completá con tu código) -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        document.getElementById('pedidoForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const inputs = document.querySelectorAll('input[type="number"]');
+            let mensaje = 'Che Burga! Quiero pedir:';
+            let alguno = false;
+
+            inputs.forEach(input => {
+                const cantidad = parseInt(input.value);
+                if (cantidad > 0) {
+                    mensaje += `%0A- ${cantidad} x ${input.name}`;
+                    alguno = true;
+                }
+            });
+
+            if (!alguno) {
+                Swal.fire({
+                    icon: 'warning',
+                    title: '¡Atención!',
+                    text: 'Seleccioná al menos un producto antes de enviar el pedido.',
+                    confirmButtonColor: '#f6ad55'
+                });
+                return;
+            }
+
+            const numero = '5491123456789';
+            const url = `https://wa.me/${numero}?text=${mensaje}`;
+            window.open(url, '_blank');
+
+            Swal.fire({
+                icon: 'success',
+                title: '¡Pedido enviado!',
+                text: 'Se abrió WhatsApp con tu pedido. ¡Gracias por elegirnos!',
+                confirmButtonColor: '#28a745'
+            });
+        });
+    </script>
+
+</body>
+
+</html>
